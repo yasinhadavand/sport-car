@@ -1,0 +1,220 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background: gray;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    background-color: tomato;
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 10;
+}
+.logoTitle{
+    width: 800px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.logoTitle>span:nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    color: white;
+    letter-spacing: 20px;
+    font-size: 25px;
+
+}
+.logoTitle>span:nth-child(2){
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    color: goldenrod;
+    transform: translate(0,-50%);
+    font-size: 20px;
+    letter-spacing: 25px;
+    
+}
+/* ------------------------- */
+.menu-top a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    color: black;
+}
+.menu-top{
+    margin-left: 100px;
+    padding-left: 315px;
+
+}
+nav a:hover{
+    box-shadow: 0 0 10px 5px rgb(221, 221, 221);
+}
+.div-back{
+    background: url(../image/car.jpg)no-repeat;
+    background-size: cover;
+    height: 600px;
+    
+}
+.p-div{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-left: 70px;
+    padding-top: 80px;
+    font-weight: 200px;
+    color: white;
+}
+.p-div2{
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-left: 70px;
+    padding-top: 10px;
+    border: hidden ;
+    width: 550px;
+    color: white;
+
+}
+p a{
+    text-decoration: none;
+    color: black;
+    border: white solid;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+    color: white;
+}
+.p-div3{
+    padding-left: 70px;
+}
+.div-em{
+    border: hidden;
+    height: 170px;
+    background: gainsboro;
+    display: flex;
+    padding-top: 10px;
+    
+}
+.p-em{
+    border: hidden;
+    width: 200px;
+    padding-left:  40px;
+    padding-top: 40px;
+}
+.p-em2{
+    padding-top: 60px;
+    padding-left: 50px;
+}
+.input-em{
+    border: solid black;
+    width: 300px;
+    height: 30px;
+
+}
+.img-b{
+    border: hidden;
+    width: 210px;
+    min-height: 200px;
+    border-radius: 50%;
+    padding: 30px;
+}
+.p-img{
+    border: hidden;
+    width: 800px;  
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.div-pic{
+    background: url(../image/51.jpg);
+    background-size: cover;
+}
+.div-pic2{
+    background: url(../image/54.jpg);
+    background-size: cover;
+}
+.div-pic3{
+    background: url(../image/53.jpg);
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    height: 250px;
+
+}
+.div-text{
+    color: white;
+    border: hidden;
+    background: rgba(253, 243, 243, 0.3);
+    padding-top: 0px;
+    text-align: center;
+
+}
+.div-img{
+    display: flex;
+    padding: 80px 0px 0px 0px;
+}
+.div-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-a2{
+    text-decoration: none;
+    color: white;
+    padding: 50px;
+}
+.footer{
+    background: gainsboro;
+    height: 280px;
+    display: flex;
+}
+.div-foot{
+    border: hidden ;
+    width: 180px;
+}
+.a-foot{
+    display: inline-block;
+    padding-left: 250px;
+    text-decoration: none;
+    color: blueviolet;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.div-foot{
+    padding-left: 180px;
+}
+#icon{
+    color: red;
+    font-size: 60px;
+}
+.overlay{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    margin-left: 3px;
+
+}
+.overlay img{
+    width: 100%;
+
+}
+.overlay-text{
+    height: 100%;
+    position: absolute;
+    background-color: blueviolet;
+    color: red;
+
+}
+.overlay:hover .overlay-text{
+    opacity: 1;
+}
