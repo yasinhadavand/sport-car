@@ -117,7 +117,6 @@ nav div{
 .card-photo{
     width: 100%;
     height: 300px;
-    /* background-color: aqua; */
     position: relative;
 }
 /* .cards::before{
@@ -131,18 +130,9 @@ nav div{
     left: -20%;
     transition: 1.5s;
 } */
-.cards::before{
-    content: "";
-    width: 1%;
-    height: 200px;
-    position: absolute;
-    float: left;
-    margin-left: 6.25%;
-    background-color: brown;
-    box-shadow: 1px 1px 50px 15px  white;
-    /* left: -20%; */
-    transition: 1.5s;
-}
+/* .cards:hover::before{
+    left: 110%;
+} */
 .cards{
     width: 25%;
     height: 200px;
@@ -151,17 +141,99 @@ nav div{
     margin-left: 6.25% ;
     float: left;
     margin-top: 50px;
-    overflow: hidden;
-    /* transition: 1.5s; */
 }
-/* .cards:hover::before{
-    left: 110%;
+.cards>p{
+    text-align: center;
+    margin-top: 22%;
+    font-size: 25px;
+}
+/* ----------- background-details-------------- */
+
+.size{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transition: 1s;
+    background-color: aqua;
+}
+.background-details1{
+    left: 50%;
+    top: 0;
+}
+.background-details2{
+    top: 50%;
+    left: 0;
+}
+.background-details3{
+    left: 50%;
+    top: 50%;
+}
+.background-details4{
+    left: 0;
+    top: 0;
+}
+.cards:hover .size{
+    border-radius: 50%;
+}
+.cards:hover .background-details1{
+    left: 70%;
+    top: -10%;
+}
+.cards:hover .background-details2{
+    top: 60%;
+    left: -20%;
+}
+.cards:hover .background-details3{
+    left: 70%;
+    top: 60%;
+}
+.cards:hover .background-details4{
+    top: -10%;
+    left: -20%;
+}
+
+.after::after{
+    content: "";
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(img/hdmercedes.jpg);
+    opacity: 0;
+    transition: 1s;
+}
+.background-details1::after{
+    background-position: top right;
+}
+.background-details2::after{
+    background-position: left bottom;
+}
+.background-details3::after{
+    background-position: bottom right;
+}
+.background-details4::after{
+    background-position: top left;
+}
+.cards:hover .after::after{
+    border-radius: 50%;
+    opacity: 0;
+}
+/* .buttom{
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid black;
+    text-align: center;
 } */
-
-
-
-
-
+.cards div>p{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 
 
