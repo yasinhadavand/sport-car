@@ -107,8 +107,74 @@ nav div{
     border-radius: 10px 10px 10px 10px;
     padding: 20px;
     color: white;
+    transition: 1s;
+}
+.IGTV:hover{
+    background-color: rgb(102, 128, 172);
 }
 
+/* --------------- */
+.card-photo{
+    width: 100%;
+    height: 300px;
+    /* background-color: aqua; */
+    position: relative;
+}
+/* .cards::before{
+    content: "";
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 6.25%;
+    background-color: brown;
+    box-shadow: 1px 1px 50px 15px  white;
+    left: -20%;
+    transition: 1.5s;
+} */
+.cards::before{
+    content: "";
+    width: 1%;
+    height: 200px;
+    position: absolute;
+    float: left;
+    margin-left: 6.25%;
+    background-color: brown;
+    box-shadow: 1px 1px 50px 15px  white;
+    /* left: -20%; */
+    transition: 1.5s;
+}
+.cards{
+    width: 25%;
+    height: 200px;
+    position: relative;
+    background-color: red;
+    margin-left: 6.25% ;
+    float: left;
+    margin-top: 50px;
+    overflow: hidden;
+    /* transition: 1.5s; */
+}
+/* .cards:hover::before{
+    left: 110%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- */
+.login-text p{
+    /* position: absolute; */
+    width: 400px;
+    font-size: 20px;
+    margin: 0 0 0 15%
+}
 .login-email{
     border: hidden;
     height: 170px;
@@ -132,7 +198,7 @@ nav div{
     transition: 1s;
 }
 .sign-in:hover{
-    background-color: rgb(59, 59, 203);
+    background-color: rgb(102, 128, 172);
 }
 .login-box{
     position: absolute;
