@@ -1,7 +1,7 @@
 body,html{
     margin: 0;
     padding: 0;
-    background: gray;
+    background: black;
 }
 *{
     box-sizing: border-box;
@@ -129,18 +129,42 @@ nav div{
     box-shadow: 1px 1px 50px 15px  white;
     left: -20%;
     transition: 1.5s;
-} */
-/* .cards:hover::before{
+    transition-delay: 1s;
+}
+.cards:hover::before{
     left: 110%;
 } */
 .cards{
     width: 25%;
     height: 200px;
     position: relative;
-    background-color: red;
+    /* background-color: red; */
     margin-left: 6.25% ;
     float: left;
     margin-top: 50px;
+}
+.car-icon{
+    width: 50%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: white; */
+    transition: 2s;
+    opacity: 0;
+}
+#car-icon-img1{
+    background: url(CarsIcon/mercedes.png) center/cover no-repeat;
+}
+#car-icon-img2{
+
+}
+#car-icon-img3{
+
+}
+.cards:hover .car-icon{
+    opacity: 1;
 }
 .cards>p{
     text-align: center;
@@ -154,7 +178,11 @@ nav div{
     width: 50%;
     height: 50%;
     transition: 1s;
-    background-color: aqua;
+    background-color: rgba(10, 161, 255, 0.825);
+}
+.cards:hover .size{
+    border-radius: 50%;
+    width: 35%;
 }
 .background-details1{
     left: 50%;
@@ -172,11 +200,10 @@ nav div{
     left: 0;
     top: 0;
 }
-.cards:hover .size{
-    border-radius: 50%;
-}
+/* ---------- */
+/* -------------- */
 .cards:hover .background-details1{
-    left: 70%;
+    left: 80%;
     top: -10%;
 }
 .cards:hover .background-details2{
@@ -184,7 +211,7 @@ nav div{
     left: -20%;
 }
 .cards:hover .background-details3{
-    left: 70%;
+    left: 80%;
     top: 60%;
 }
 .cards:hover .background-details4{
@@ -199,7 +226,7 @@ nav div{
     height: 100%;
     position: absolute;
     background-image: url(img/hdmercedes.jpg);
-    opacity: 0;
+    opacity: 1;
     transition: 1s;
 }
 .background-details1::after{
@@ -218,6 +245,7 @@ nav div{
     border-radius: 50%;
     opacity: 0;
 }
+
 /* .buttom{
     width: 100px;
     height: 40px;
@@ -234,6 +262,50 @@ nav div{
     left: 50%;
     transform: translate(-50%);
 }
+.img-detail{
+    width: 40%;
+    height: 50%;
+    /* background-color: red; */
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+.car-engine{
+    background: url(icon/car-engine.png) center center/cover no-repeat;
+}
+.hp{
+    background: url(icon/horse.png) center center/cover no-repeat;
+}
+.output{
+    background: url(icon/output.png) center center/cover no-repeat;
+}
+.performance{
+    background: url(icon/performance.png) center center/cover no-repeat;
+}
+.text-detail{
+    position: absolute;
+    top: 50%;
+}
+/* .link{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
