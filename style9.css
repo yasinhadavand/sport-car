@@ -1,7 +1,7 @@
 body,html{
     margin: 0;
     padding: 0;
-    background: black;
+    background: gray;
 }
 *{
     box-sizing: border-box;
@@ -315,29 +315,29 @@ nav div{
 
 
 /* ---------------------- */
-.login-text p{
-    /* position: absolute; */
-    width: 400px;
-    font-size: 20px;
-    margin: 0 0 0 15%
-}
+
 .login-email{
     border: hidden;
-    height: 170px;
+    height: 150px;
     background: gainsboro;
     display: flex;
-    padding-top: 10px;
+    position: relative;
+    /* padding-top: 10px; */
     
 }
-.login-email>div:nth-child(1){
-    border: hidden;
-    width: 200px;
-    padding-left:  40px;
-    padding-top: 40px;
+.login-text p{
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    font-size: 30px;
+    margin: 0%;
+    top: 50%;
+    transform: translate(0,-50%);
 }
 .login-email>div:nth-child(2){
-    padding-top: 60px;
-    padding-left: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
 }
 .sign-in{
     font-size: 15px;
@@ -357,6 +357,20 @@ nav div{
     width: 150px;
     height: 50px;
 }
+/* ----------- end if login form----------- */
+
+.background-fixed{
+    width: 100%;
+    height: 500px;
+    /* display: flex; */
+    position: relative;
+    background-color: blue;
+    background: url(img/background\,flex.jpg) center center/cover no-repeat;
+}
+.social-media{
+    
+}
+
 .img-b{
     border: hidden;
     width: 210px;
@@ -396,19 +410,24 @@ main{
     text-align: center;
 
 }
-.div-img{
-    display: flex;
-    padding: 80px 0px 0px 0px;
-}
-.div-a{
-    display: flex;
+.social-media{
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: red;
 }
-.div-a2{
+.media{
     text-decoration: none;
     color: white;
-    padding: 50px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-60%);
+    /* padding: 50px; */
+    background-color: aqua ;
+    
+
 }
 .footer{
     background: gainsboro;
