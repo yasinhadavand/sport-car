@@ -160,10 +160,10 @@ nav div{
     background: url(CarsIcon/mercedes.png) center/cover no-repeat;
 }
 #car-icon-img2{
-
+    background: url(CarsIcon/mercedes.png) center/cover no-repeat;
 }
 #car-icon-img3{
-
+    background: url(CarsIcon/mercedes.png) center/cover no-repeat;
 }
 .cards:hover .car-icon{
     opacity: 1;
@@ -357,7 +357,7 @@ nav div{
     width: 150px;
     height: 50px;
 }
-/* ----------- end if login form----------- */
+/* ----------- end of login form----------- */
 
 .background-fixed{
     width: 100%;
@@ -367,89 +367,139 @@ nav div{
     background-color: blue;
     background: url(img/background\,flex.jpg) center center/cover no-repeat;
 }
-.social-media{
-    
-}
 
-.img-b{
-    border: hidden;
-    width: 210px;
-    min-height: 200px;
-    border-radius: 50%;
-    padding: 30px;
-}
-.p-img{
-    border: hidden;
-    width: 800px;  
-    padding-left: 30px;
-    padding-top: 30px;
-}
-.div-pic{
-    background: url(../image/51.jpg);
-    background-size: cover;
-}
-.div-pic2{
-    background: url(../image/54.jpg);
-    background-size: cover;
-}
-.div-pic3{
-    background: url(../image/53.jpg);
-    background-size: cover;
-}
+/* --------------background fixed--------- */
 
-main{
-    display: flex;
-    height: 250px;
 
-}
-.div-text{
-    color: white;
-    border: hidden;
-    background: rgba(253, 243, 243, 0.3);
-    padding-top: 0px;
-    text-align: center;
 
-}
+/* ----------social media-------- */
 .social-media{
     /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 100%;
     height: 150px;
-    background-color: red;
 }
 .media{
-    text-decoration: none;
+    width: 20%;
+    height: 70px;
+    margin-left: 4%;
     color: white;
     position: relative;
+    float: left;
     top: 50%;
-    transform: translate(0,0%);
-    /* padding: 50px; */
-    background-color: aqua ;
-    
-
+    transform: translate(0%,-50%);
 }
+/* .media::before{
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    background-color: brown;
+    background: url(icon/facebook.png)center center/cover no-repeat;
+    left: 50%;
+    transform: translate(-50%);
+} */
+.media>a{
+    width: 50%;
+    height: 100%;
+    font-family: cursive;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+.media a>span{
+    width: 50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 20px;
+}
+.social-icon{
+    position: absolute;
+    width: 30%;
+    height: 62%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#facebook{
+    background: url(icon/facebook.png)center center/cover no-repeat;
+}
+#twitter{
+    background: url(icon/twitter.png)center center/cover no-repeat;
+}
+#instagram{
+    background: url(icon/instagram.png)center center/cover no-repeat;
+}
+#telegram{
+    background: url(icon/telegram.png)center center/cover no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------end of social media--------- */
 .footer{
     background: gainsboro;
-    height: 280px;
+    height: 210px;
     display: flex;
 }
-.div-foot{
+.about-us{
     border: hidden ;
-    width: 180px;
+    width: 50%;
 }
-.a-foot{
-    display: inline-block;
-    padding-left: 250px;
-    text-decoration: none;
-    color: blueviolet;
-    margin: 10px;
+.other-chalenge{
+    width: 50%;
+    position: relative;
+}
+.other-chalenge h3{
+    font-size: 25px;
+    margin-left: 30px;
     text-transform: uppercase;
 }
-.div-foot{
-    padding-left: 180px;
+.a-foot{
+    position: relative; 
+    float: left;
+    height: 30px;
+    width: 40%;
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+    margin-top: 10px ;
 }
-#icon{
+.a-foot>span{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.a-foot>span:hover{
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px black;
+
+}
+/* .div-foot{
+    padding-left: 180px;
+} */
+/* #icon{
     color: red;
     font-size: 60px;
 }
@@ -474,4 +524,4 @@ main{
 }
 .overlay:hover .overlay-text{
     opacity: 1;
-}
+} */
